@@ -17,13 +17,12 @@ If you add "offline_access" (e.g.g https://graph.microsoft.com/reports.read.all 
 
 $TenantID = "8ffdf9c1-9116-4da9-b7c4-928b095b1fac"
 $ClientID = "8e7890a2-3e89-43b3-b742-8d53b928a3cc"
-$ClientSecret = "509rJ1doOJF@kcXqHx[TcdlNA=BTE=AV"
+
 
 $ReqTokenBody = @{
     Grant_Type    = "Refresh_Token"
     client_Id     = $ClientID
     Refresh_TOken = $TokReqRes.refresh_token
-    #client_secret = $ClientSecret
 }
 
 $TokReqRes = Invoke-RestMethod -Uri "https://login.microsoftonline.com/$TenantID/oauth2/v2.0/token" -Method POST -Body $ReqTokenBody
