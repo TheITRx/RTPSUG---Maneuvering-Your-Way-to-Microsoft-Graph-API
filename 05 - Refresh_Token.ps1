@@ -13,6 +13,8 @@ If you add "offline_access" (e.g.g https://graph.microsoft.com/reports.read.all 
 3. The access token acquired from the refresh token can be used the same fashion as the rest of the grant types
     #>
 
+# DO NOT PUT SECRETS/PASSWORDS IN SOURCE CODE, THIS IS FOR DEMO ONLY!
+
 $TenantID = "8ffdf9c1-9116-4da9-b7c4-928b095b1fac"
 $ClientID = "8e7890a2-3e89-43b3-b742-8d53b928a3cc"
 $ClientSecret = "509rJ1doOJF@kcXqHx[TcdlNA=BTE=AV"
