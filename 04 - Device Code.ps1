@@ -19,6 +19,7 @@ With right permissions and admin grant or user authorization, this is the flow f
 7. Use $reqheader as the Header for your request to Graph API endpoint
 #>
 
+
 # Request device code for authentication
 
 # DO NOT PUT SECRETS/PASSWORDS IN SOURCE CODE, THIS IS FOR DEMO ONLY!
