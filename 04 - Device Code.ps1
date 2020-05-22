@@ -55,4 +55,3 @@ $ReqHeader = @{
 # Sending to Graph, sample code to get all license. 
 $allSKUs = Invoke-RestMethod -Uri "https://graph.microsoft.com/v1.0/subscribedSkus" -Method Get -Headers $ReqHeader
 $allSKUs.value | Select-Object skuPartNumber, ConsumedUnits
-#EndRegion Device Code FLow
